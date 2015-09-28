@@ -4,14 +4,14 @@ namespace ConvertorApp;
 
 class TemperatureConverter extends Imperial
 {
-  public function convertFahrenhitToCelsius($unit)
+  public function convertFahrenheitToCelsius($unit)
   {
     $imperialUnit = new Imperial($unit);
     $Celsius = (5/9)*($unit - 32);
     return $Celsius;
   }
 
-  public function convertCelsiusToFahrenhit($unit)
+  public function convertCelsiusToFahrenheit($unit)
   {
     $imperialUnit = new Imperial($unit);
     $Fahrenhit = ($unit*9/5) + 32;
