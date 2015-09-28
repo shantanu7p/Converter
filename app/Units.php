@@ -4,6 +4,7 @@ namespace ConvertorApp;
 
 class Units
 {
+  $unit;
   public function argumentValidator($argument)
   {
     if (is_string($argument))
