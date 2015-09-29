@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'ConvertorApp\\' => array($baseDir . '/app'),
+    'ConverterApp\\' => array($baseDir . '/app'),
 );

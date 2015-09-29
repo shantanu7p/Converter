@@ -1,30 +1,30 @@
 <?php
 
-namespace ConvertorApp;
+namespace ConverterApp;
 
 class WeightConverter extends MetricUnit
 {
-  public function convertMiliGramToGram($unit)
+  public function convertMilliGramToGram($unit)
   {
-    $gram=$this->miliUnitToUnit($unit);
+    $gram=$this->milliUnitToUnit($unit);
     return $gram;
   }
 
-  public function convertGramToMiliGram($unit)
+  public function convertGramToMilliGram($unit)
   {
-    $miliGram=$this->unitTomiliUnit($unit);
-    return $miligram;
+    $milliGram=$this->unitToMilliUnit($unit);
+    return $milliGram;
   }
 
   public function convertGramToKiloGram($unit)
   {
     $kiloGram=$this->unitToKiloUnit($unit);
-    return $KiloGram;
+    return $kiloGram;
   }
 
   public function convertKiloGramToGram($unit)
   {
-    $miliGram=$this->kiloUnitToUnit($unit);
-    return $miligram;
+    $milliGram=$this->kiloUnitToUnit($unit);
+    return $milliGram;
   }
 }

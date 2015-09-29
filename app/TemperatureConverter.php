@@ -1,33 +1,33 @@
 <?php
 
-namespace ConvertorApp;
+namespace ConverterApp;
 
 class TemperatureConverter extends Imperial
 {
   public function convertFahrenheitToCelsius($unit)
   {
-    $imperialUnit = new Imperial($unit);
+    $this->argumentValidator($unit);
     $Celsius = (5/9)*($unit - 32);
     return $Celsius;
   }
 
   public function convertCelsiusToFahrenheit($unit)
   {
-    $imperialUnit = new Imperial($unit);
+    $this->argumentValidator($unit);
     $Fahrenhit = ($unit*9/5) + 32;
     return $Fahrenhit;
   }
 
-  public function convertKelvinToCelsius($temprature)
+  public function convertKelvinToCelsius($unit)
   {
-    $imperialUnit = new Imperial($unit);
+    $this->argumentValidator($unit);
     $Celsius = $unit - 273.15;
     return $Celsius;
   }
 
-  public function convertCelsiusToKelvin($temprature)
+  public function convertCelsiusToKelvin($unit)
   {
-    $imperialUnit = new Imperial($unit);
+    $this->argumentValidator($unit);
     $Kelvin = $unit + 273.15;
     return $Kelvin;
   }

@@ -1,31 +1,31 @@
 <?php
 
-namespace ConvertorApp;
+namespace ConverterApp;
 
 class VolumeConverter extends MetricUnit
 {
-  public function convertMiliLitreToCentiLitre($unit)
+  public function convertMilliLitreToCentiLitre($unit)
   {
-    $centiLitre=$this->miliUnitToCentiUnit($unit);
+    $centiLitre=$this->milliUnitToCentiUnit($unit);
     return $centiLitre;
   }
 
-  public function convertCentiLitreToMiliLitre($unit)
+  public function convertCentiLitreToMilliLitre($unit)
   {
-    $miliLitre=$this->centiUnitToMiliUnit($unit);
-    return $miliLitre;
+    $milliLitre=$this->centiUnitToMilliUnit($unit);
+    return $milliLitre;
   }
 
-  public function convertMiliLitreToLitre($unit)
+  public function convertMilliLitreToLitre($unit)
   {
-    $litre=$this->miliUnitToUnit($unit);
+    $litre=$this->milliUnitToUnit($unit);
     return $litre;
   }
 
-  public function convertLitreToMiliLitre($unit)
+  public function convertLitreToMilliLitre($unit)
   {
-    $miliLitre=$this->unitToMiliUnit($unit);
-    return $miliLitre;
+    $milliLitre=$this->unitToMilliUnit($unit);
+    return $milliLitre;
   }
 
   public function convertLitreToKiloLitre($unit)

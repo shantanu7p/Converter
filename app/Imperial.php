@@ -1,11 +1,8 @@
 <?php
 
-namespace ConvertorApp;
+namespace ConverterApp;
 
 class Imperial extends Units
 {
-  public function _Imperial($validUnit)
-  {
-    $this->argumentValidator($validUnit);
-  }
+  
 }

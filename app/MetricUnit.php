@@ -1,61 +1,93 @@
 <?php
 
-namespace ConvertorApp;
+namespace ConverterApp;
 
 class MetricUnit extends Units
 {
-  public function miliUnitToUnit($unit)
+  public function milliUnitToUnit($unit)
   {
+     if ($unit < 0)
+    {
+      throw new \InvalidArgumentException("Please Enter valid Argument");
+    }
     $this->argumentValidator($unit);
-    $unit = $unit*100;
+    $unit = $unit/1000;
     return $unit;
   }
 
-  public function unitToMiliUnit($unit)
+  public function unitToMilliUnit($unit)
   {
+     if ($unit < 0)
+    {
+      throw new \InvalidArgumentException("Please Enter valid Argument");
+    }
     $this->argumentValidator($unit);
-    $miliUnit = $unit/100;
-    return $miliUnit;
+    $milliUnit = $unit*1000;
+    return $milliUnit;
   }
 
   public function unitToKiloUnit($unit)
   {
+     if ($unit < 0)
+    {
+      throw new \InvalidArgumentException("Please Enter valid Argument");
+    }
     $this->argumentValidator($unit);
-    $kiloUnit = $unit*1000;
+    $kiloUnit = $unit/1000;
     return $kiloUnit;
   }
 
   public function kiloUnitToUnit($unit)
   {
+     if ($unit < 0)
+    {
+      throw new \InvalidArgumentException("Please Enter valid Argument");
+    }
     $this->argumentValidator($unit);
     $unit = $unit*1000;
     return $unit;
   }
-  public function miliUnitToKiloUnit($unit)
+  public function milliUnitToKiloUnit($unit)
   {
+     if ($unit < 0)
+    {
+      throw new \InvalidArgumentException("Please Enter valid Argument");
+    }
     $this->argumentValidator($unit);
     $kiloUnit = $unit/100000;
     return $kiloUnit;
   }
 
-  public function kiloUnitTomiliUnit($unit)
+  public function kiloUnitToMilliUnit($unit)
   {
+     if ($unit < 0)
+    {
+      throw new \InvalidArgumentException("Please Enter valid Argument");
+    }
     $this->argumentValidator($unit);
-    $miliUnit = $unit*100000;
-    return $miliUnit;
+    $milliUnit = $unit*100000;
+    return $milliUnit;
   }
 
-  public function miliUnitToCentiUnit($unit)
+  public function milliUnitToCentiUnit($unit)
   {
+     if ($unit < 0)
+    {
+      throw new \InvalidArgumentException("Please Enter valid Argument");
+    }
     $this->argumentValidator($unit);
     $centiUnit = $unit/10;
     return $centiUnit;
   }
 
-  public function centiUnitToMiliUnit($unit)
+  public function centiUnitToMilliUnit($unit)
   {
+     if ($unit < 0)
+    {
+      throw new \InvalidArgumentException("Please Enter valid Argument");
+    }
     $this->argumentValidator($unit);
-    $miliUnit = $unit*10;
-    return $miliUnit;
+    $milliUnit = $unit*10;
+    return $milliUnit;
   }
 }

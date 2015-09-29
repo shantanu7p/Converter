@@ -1,42 +1,42 @@
 <?php
 
-namespace ConvertorApp;
+namespace ConverterApp;
 
 class LengthConverter extends MetricUnit
 {
-  public function convertMiliMeterToCentiMeter($unit)
+  public function convertMilliMeterToCentiMeter($unit)
   {
-    $centiMeter=$this->miliUnitToCentiUnit($unit);
+    $centiMeter=$this->milliUnitToCentiUnit($unit);
     return $centiMeter;
   }
 
-  public function convertCentiMeterToMiliMeter($unit)
+  public function convertCentiMeterToMilliMeter($unit)
   {
-    $miliMeter=$this->centiUnitToMiliUnit($unit);
-    return $miliMeter;
+    $milliMeter=$this->centiUnitToMilliUnit($unit);
+    return $milliMeter;
   }
 
-  public function convertMiliMeterToMeter($unit)
+  public function convertMilliMeterToMeter($unit)
   {
-    $meter=$this->miliUnitToUnit($unit);
+    $meter=$this->milliUnitToUnit($unit);
     return $meter;
   }
 
-  public function convertMeterToMiliMeter($unit)
+  public function convertMeterToMilliMeter($unit)
   {
-    $miliMeter=$this->unitToMiliUnit($unit);
-    return $miliMeter;
+    $milliMeter=$this->unitToMilliUnit($unit);
+    return $milliMeter;
   }
 
   public function convertMeterToKiloMeter($unit)
   {
     $kiloMeter=$this->unitToKiloUnit($unit);
-    return $meter;
+    return $kiloMeter;
   }
 
   public function convertKiloMeterToMeter($unit)
   {
     $meter=$this->kiloUnitToUnit($unit);
-    return $miliMeter;
+    return $meter;
   }
 }
