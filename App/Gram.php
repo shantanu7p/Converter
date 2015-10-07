@@ -2,8 +2,8 @@
 namespace ConverterApp;
 class Gram extends Weight
 {
-  public function _Gram()
-  {
-    $power = 0;
-  }
+ public function _Gram()
+ {
+  $power = 0;
+ }
 }

@@ -7,3 +7,4 @@ class KiloLitre extends Volume
   $power=3;
  }
 }
+

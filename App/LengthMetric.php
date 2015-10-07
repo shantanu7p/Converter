@@ -4,3 +4,4 @@ class LengthMetric extends Metric
 {
 
 }
+

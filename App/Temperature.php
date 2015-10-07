@@ -30,3 +30,4 @@ class Temperature extends Imperial
     return $Kelvin;
   }
 }
+

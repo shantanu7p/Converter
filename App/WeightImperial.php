@@ -1,7 +1,8 @@
 <? php
 namespace ConverterApp;
-class Volume extends Metric
+class WeightImperial
 {
-
+ 
 }
+
 

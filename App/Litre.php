@@ -7,3 +7,4 @@ class Litre extends Volume
   $power=0;
  }
 }
+
