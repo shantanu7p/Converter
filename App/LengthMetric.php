@@ -1,6 +1,6 @@
 <? php
 namespace ConverterApp;
-class Weight extends Metric
+class LengthMetric extends Metric
 {
 
 }

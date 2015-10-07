@@ -2,10 +2,12 @@
 namespace ConverterApp;
 class Converter
 {
-   public function converter($object,$value)
+   public function converter($object,$targateUnit,$value)
     {
-        $power = $object->$fromUnit - $object->$toUnit;
-        $convertedValue = pow($value,$power);
-        return $convertedValue;
+      $this->argumentValidator($value);
+      $finalPower = $object->$power - $targateUnit;
+      $convertedPower = pow(10,$finalPower);
+      $finalConvertedUnit = $convertedPower * $value;
+      return $finalConvertedUnit;
     }
 }
