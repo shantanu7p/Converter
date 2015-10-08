@@ -1,6 +1,6 @@
 <? php
 namespace ConverterApp;
-class Converter
+class MetricUnitConverter
 {
  public function converter($object,$targateUnit,$value)
  {
