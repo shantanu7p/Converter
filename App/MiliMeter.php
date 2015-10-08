@@ -1,6 +1,6 @@
 <? php 
 namespace ConverterApp;
-class MiliMeter extends Length
+class MiliMeter extends LengthMetric
 {
  public function __MiliMeter()
  {

@@ -1,6 +1,6 @@
 <? php
 namespace ConverterApp;
-class WeightImperial
+class WeightImperial extends Imperial
 {
  
 }

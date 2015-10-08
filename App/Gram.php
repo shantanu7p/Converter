@@ -1,6 +1,6 @@
 <? php
 namespace ConverterApp;
-class Gram extends Weight
+class Gram extends WeightMetric
 {
  public function _Gram()
  {

@@ -1,6 +1,6 @@
 <? php
 namespace ConverterApp;
-class KiloGram extends Weight
+class KiloGram extends WeightMetric
 {
   public function __KiloGram()
   {

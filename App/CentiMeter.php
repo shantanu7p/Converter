@@ -1,6 +1,6 @@
 <? php 
 namespace ConverterApp;
-class CentiMeter extends Length
+class CentiMeter extends LengthMetric
 {
  public function __CentiMeter()
  {
