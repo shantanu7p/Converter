@@ -2,8 +2,10 @@
 namespace ConverterApp;
 class MiliMeter extends LengthMetric
 {
- public function __MiliMeter()
- {
- 	$power=-3;
- }	
+  public function __construct($newUnitPower)
+  {
+     public $sourceUnitPower = -3;
+     $this->$sourceUnitName = "millimeter";
+     $this->$convertedUnitPower = $newUnitPower;
+  }	
 }

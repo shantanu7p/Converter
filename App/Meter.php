@@ -2,8 +2,10 @@
 namespace ConverterApp;
 class Meter extends LengthMetric
 {
- public function __Meter()
- {
- 	$power=0;
- }	
+  public function __construct($newUnitPower)
+  {
+     public $sourceUnitPower = 0;
+     $this->$sourceUnitName = "meter";
+     $this->$onvertedUnitPower = $newUnitPower;
+  } 
 }

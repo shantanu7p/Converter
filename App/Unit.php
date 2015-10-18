@@ -2,7 +2,7 @@
 namespace ConverterApp;
 class Unit
 {
-  $value;
-  $object;
+  public $sourceUnitName;
+  public $convertedUnitName;
 }
 

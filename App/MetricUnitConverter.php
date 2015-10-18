@@ -2,12 +2,12 @@
 namespace ConverterApp;
 class MetricUnitConverter
 {
- public function converter($object,$targateUnit,$value)
+ public function converter($unit,$value)
  {
-  $this->argumentValidator($value);
-  $CalculatedPower = $object->$power - $targateUnit;
-  $convertedPower = pow(10,$CalculatedPower);
-  $finalConvertedUnit = $convertedPower * $value;
-  return $finalConvertedUnit;
+  $this->argumentValidator($value->$sourceValue);
+  $calculatedPower = $unit->$sourceUnitPower - $unit->$convertedUnitPower;
+  $finalPower = pow(10,$calculatedPower);
+  $finalConvertedUnit = $finalPower * $value->sourceValue;
+  $value->convertedValue = $finalConvertedUnit;
   }
  }
