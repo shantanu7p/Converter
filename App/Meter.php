@@ -1,11 +1,13 @@
-<? php 
+<? php
+
 namespace ConverterApp;
-class Meter extends LengthMetric
+
+class Meter extends Length
 {
-  public function __construct($newUnitPower)
+  protected power;
+  public function __construct()
   {
-     public $sourceUnitPower = 0;
-     $this->$sourceUnitName = "meter";
-     $this->$onvertedUnitPower = $newUnitPower;
-  } 
+    $this->power = 0;
+    parent::__construct("Meter","M");
+  }
 }

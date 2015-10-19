@@ -1,12 +1,13 @@
-<? php 
+<? php
+
 namespace ConverterApp;
-class CentiMeter extends LengthMetric
+
+class CentiMeter extends Length
 {
-    public function __construct($newUnitPower)
-    {
-      public $sourceUnitPower = -2;
-      $this->$sourceUnitName = "centimeter";
-      $this->$onvertedUnitPower = $newUnitPower;
-     }
-  }	
+  protected power;
+  public function __construct()
+  {
+    $this->power = -2;
+    parent::__construct("CentiMeter","CM");
+  }
 }

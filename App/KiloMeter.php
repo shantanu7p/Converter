@@ -1,11 +1,13 @@
-<? php 
+<? php
+
 namespace ConverterApp;
-class KiloMeter extends LengthMetric
+
+class KiloMeter extends Length
 {
-   public function __construct($newUnitPower)
+  protected power;
+  public function __construct()
   {
-     public $sourceUnitPower = 3;
-     $this->$sourceUnitName = "kilometer";
-     $this->$onvertedUnitPower = $newUnitPower;
-   }
+    $this->power = 3;
+    parent::__construct("KiloMeter","KM");
+  }
 }

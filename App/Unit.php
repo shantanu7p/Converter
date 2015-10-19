@@ -1,8 +1,9 @@
 <? php
+
 namespace ConverterApp;
+
 class Unit
 {
-  public $sourceUnitName;
-  public $convertedUnitName;
+  protected $longName;
+  protected $shortName;
 }
-
