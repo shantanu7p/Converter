@@ -1,10 +1,10 @@
-<? php
+<?php
 
 namespace ConverterApp;
 
 class Meter extends Length
 {
-  protected power;
+  public $power;
   public function __construct()
   {
     $this->power = 0;
