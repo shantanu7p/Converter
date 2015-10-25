@@ -7,4 +7,3 @@ class Value
   public $lvalue;
   public $unit;
 }
-
