@@ -4,6 +4,6 @@ namespace ConverterApp;
 
 class Value
 {
-  public $lvalue;
-  public $unit;
+  protected $_lvalue;
+  protected $_unit;
 }

@@ -4,7 +4,7 @@ namespace ConverterApp;
 
 class Meter extends Length
 {
-  public $power;
+  protected $_power;
   public function __construct()
   {
     $this->power = 0;

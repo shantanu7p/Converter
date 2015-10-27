@@ -4,6 +4,6 @@ namespace ConverterApp;
 
 class Unit
 {
-  protected $longName;
-  protected $shortName;
+  protected $_longName;
+  protected $_shortName;
 }
