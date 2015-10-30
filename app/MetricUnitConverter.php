@@ -4,13 +4,13 @@ namespace ConverterApp;
 
 class MetricUnitConverter extends Converter
 {
-    public function converter($currentUnit, $newUnit)
+    public function converter($source, $destination)
     {
         $result;
-        $calculatedPower = $currentUnit->getUnit()->getPower() - $newUnit->getUnit()->getPower();
-        $finalPower = pow(10, $calculatedPower);
-        $result = $finalPower * $currentUnit->getValue();
-        $newUnit->setValue($result);
-        return $newUnit->getValue();
+        $calculatedCoefficient = $source->getUnit()->getPower() - $destination->getUnit()->getPower();
+        $finalCoefficient = pow(10, $calculatedCoefficient);
+        $result = $finalCoefficient * $source->getValue();
+        $destination->setValue($result);
+        return $destination->getValue();
     }
 }
